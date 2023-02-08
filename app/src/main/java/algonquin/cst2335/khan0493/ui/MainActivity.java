@@ -48,21 +48,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
         variableBinding.checkbox.setOnCheckedChangeListener((checkbox, isChecked) -> {
-            if (isChecked) {
+
                 model.isSelected.postValue(isChecked);
-            }
         });
 
         variableBinding.radioButton1.setOnCheckedChangeListener((radioButton1, isChecked) -> {
-            if (isChecked) {
+
                 model.isSelected.postValue(isChecked);
-            }
+
         });
 
         variableBinding.switch1.setOnCheckedChangeListener((switch1, isChecked) -> {
-            if (isChecked) {
+
                 model.isSelected.postValue(isChecked);
-            }
+
         });
 
         variableBinding.myimagebutton.setOnClickListener(new View.OnClickListener() {
